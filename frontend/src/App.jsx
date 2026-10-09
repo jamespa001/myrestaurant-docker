@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import RecipeDetail from './components/RecipeDetail.jsx';
 import RecipeCard from './components/RecipeCard.jsx';
 
-const API_URL = 'http://localhost:5000/api/recipes';
+const API_URL =
+  'https://myrestaurant-backend-231710237888.us-central1.run.app/api/recipes';
 
 export default function App() {
   const [search, setSearch] = useState('');

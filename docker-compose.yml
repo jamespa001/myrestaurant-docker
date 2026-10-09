@@ -1,8 +1,7 @@
-version: '3.8'
-
 services:
   backend:
     build: ./backend
+    image: jamespa001/myrestaurant-backend:latest
     ports:
       - '5000:3000'
     environment:
@@ -10,6 +9,7 @@ services:
 
   frontend:
     build: ./frontend
+    image: jamespa001/myrestaurant-frontend:latest
     ports:
       - '8080:80'
     depends_on:
